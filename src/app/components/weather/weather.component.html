@@ -1,0 +1,24 @@
+<div class="container-fluid d-flex ">
+    <div class="weatherSection ">
+        
+    <div class="card ">
+       <h1 class="text-center"> Temparature Converter</h1>
+       <div class="image">
+       
+        <img src="./assets/weatherImage/brightSky.avif" alt="">
+
+        </div>
+        <div class="card-body">
+            <div class="item">
+                <label for="celcius">Celsius</label>
+                <input type="text" name="celcius" placeholder="enter temparature" [(ngModel)]="c" (ngModelChange)="changed($event, 'c')">
+            </div>
+            <div class="item">
+                <label for="farenheight">Farenheit:</label>
+                <input type="text" name="farenheight" placeholder="enter temparature" [(ngModel)]="f" (ngModelChange)="changed($event,'f')">
+            
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
